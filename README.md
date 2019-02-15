@@ -8,6 +8,10 @@
 
 This site is a portfolio of my work and includes sample work, my background, work experience, skills and interests.
 
+## Site Plan
+
+<img src="/images/Portfolio-structure.png" width="350" title="Component Structure">
+
 ## Setup/Installation Requirements
 
 * Clone this project with `git clone https://github.com/klowe27/portfolio-react`
