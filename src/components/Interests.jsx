@@ -1,22 +1,22 @@
 import React from 'react';
-import IndividualInterest from './IndividualInterest'
+import IndividualInterest from './IndividualInterest';
 
 function Interests() {
   const interests = [
     {
-      label: "Podcasts",
+      label: 'Podcasts',
       icon: 'mic',
-      list: ["Pod Save America", "Serial", "The Daily", "Reply All"]
+      list: ['Pod Save America', 'Serial', 'The Daily', 'Reply All']
     },
     {
-      label: "Topics",
+      label: 'Topics',
       icon: 'favorite',
-      list: ["Minimalis", "Design", "Financial Independence", "Photography"]
+      list: ['Minimalis', 'Design', 'Financial Independence', 'Photography']
     },
     {
-      label: "Dream Travel",
+      label: 'Dream Travel',
       icon: 'flight_takeoff',
-      list: ["Thailand", "Ireland", "Grand Canyon", "Iceland"]
+      list: ['Thailand', 'Ireland', 'Grand Canyon', 'Iceland']
     }
   ];
 
@@ -26,10 +26,10 @@ function Interests() {
       <div className="content-container">
         {interests.map((interest, index) =>
           <IndividualInterest
-          label={interest.label}
-          icon={interest.icon}
-          list={interest.list}
-          key={index}/>
+            label={interest.label}
+            icon={interest.icon}
+            list={interest.list}
+            key={index}/>
         )}
       </div>
     </div>

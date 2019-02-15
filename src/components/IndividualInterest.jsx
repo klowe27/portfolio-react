@@ -9,8 +9,8 @@ function IndividualInterest({label, icon, list}){
       <Icon>{icon}</Icon>
       <h3>{label}</h3>
       <ul>
-        {list.map((item, index) =>
-          <li id={index}>{item}</li>
+        {list.map((item) =>
+          <li>{item}</li>
         )}
       </ul>
     </div>

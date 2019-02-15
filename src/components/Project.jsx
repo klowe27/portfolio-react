@@ -17,7 +17,7 @@ function Project({image, name, description, technologies, link}){
 }
 
 Project.propTypes = {
-  image: PropTypes.element.isRequired,
+  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technologies: PropTypes.string.isRequired,

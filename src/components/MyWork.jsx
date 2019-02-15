@@ -1,9 +1,9 @@
 import React from 'react';
-import Project from './Project'
-import Food from './assets/images/food.png'
-import Stonewall from './assets/images/stonewall.png'
-import Charity from './assets/images/charity-frog.png'
-import Mastermind from './assets/images/mastermind.png'
+import Project from './Project';
+import Food from './assets/images/food.png';
+import Stonewall from './assets/images/stonewall.png';
+import Charity from './assets/images/charity-frog.png';
+import Mastermind from './assets/images/mastermind.png';
 import 'materialize-css/dist/css/materialize.min.css';
 
 function Interests() {
@@ -44,12 +44,12 @@ function Interests() {
       <div className="content-container">
         {projects.map((project, index) =>
           <Project
-          image={project.image}
-          name={project.name}
-          description={project.description}
-          technologies={project.technologies}
-          link={project.link}
-          key={index}/>
+            image={project.image}
+            name={project.name}
+            description={project.description}
+            technologies={project.technologies}
+            link={project.link}
+            key={index}/>
         )}
       </div>
     </div>
