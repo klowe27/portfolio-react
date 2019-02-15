@@ -1,10 +1,15 @@
 import React from 'react';
 import Project from './Project'
+import Food from './assets/images/food.png'
+import Stonewall from './assets/images/stonewall.png'
+import Charity from './assets/images/charity-frog.png'
+import Mastermind from './assets/images/mastermind.png'
+import 'materialize-css/dist/css/materialize.min.css';
 
 function Interests() {
   const projects = [
     {
-      image: './assets/images/food.png',
+      image: {Food},
       name: 'Food Savor',
       description: 'With a small group, I created a web app to let users search for recipes based on expiring ingredients in order to reduce food waste. I designed the UI, parsed and displayed the API response, and was heavily involved in the site architecture.',
       technologies: ['Pod Save America', 'Serial', 'The Daily', 'Reply All'],
@@ -12,7 +17,7 @@ function Interests() {
     },
     {
       image: 'Stonewall',
-      name: 'Sonewall Wears',
+      name: 'Stonewall Wears',
       description: 'This is an e-commerce site where users can browse products and add them to their cart. Users can log-in with their Google account to save their cart for later.',
       technologies: 'Angular, Firebase, Firebase Authentication, Typescript and Git',
       link: 'https://stonewall-wears.firebaseapp.com/'
@@ -39,7 +44,7 @@ function Interests() {
       <div className="content-container">
         {projects.map((project, index) =>
           <Project
-          image={project.image}
+          image={Mastermind}
           name={project.name}
           description={project.description}
           technologies={project.technologies}

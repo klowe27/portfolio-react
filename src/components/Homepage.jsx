@@ -10,7 +10,7 @@ import './assets/styles/styles.css'
 
 function Homepage(){
   return (
-    <div className="container">
+    <div className="container" id="about">
       <AboutMe/>
       <MyWork/>
       <Background/>
