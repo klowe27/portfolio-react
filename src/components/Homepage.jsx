@@ -1,13 +1,14 @@
 import React from 'react';
+import AboutMe from './AboutMe'
 import 'materialize-css/dist/css/materialize.min.css';
 import { Row } from 'react-materialize';
 
-function Test(){
+function Homepage(){
   return (
     <div>
-      <p>Test body</p>
+      <AboutMe/>
     </div>
   );
 }
 
-export default Test;
+export default Homepage;

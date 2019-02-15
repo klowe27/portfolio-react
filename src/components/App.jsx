@@ -1,5 +1,5 @@
 import React from 'react';
-import Test from './Test';
+import Homepage from './Homepage';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function App(){
     `} </style>
       <Header/>
       <Switch>
-        <Route exact path='/' component={Test} />
+        <Route exact path='/' component={Homepage} />
       </Switch>
     </div>
   );
