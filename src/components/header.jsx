@@ -1,11 +1,14 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import 'materialize-css/dist/css/materialize.min.css';
+import {Navbar, NavItem, Icon} from 'react-materialize';
 
 
 function Header() {
   return(
     <div className="heading">
       <h1 id="home">Kristin Brewer-Lowe</h1>
+
       <div className="menu">
         <div><Link to='/#about'><button className="menu-item">About Me</button></Link></div>
         <div><Link to='/#work'><button className="menu-item">My Work</button></Link></div>
