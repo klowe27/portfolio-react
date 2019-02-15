@@ -1,3 +1,5 @@
+/* red: #FF2B18 green: #50C878 blue: #0080FF, purple: #9B30FF, orange: #FFB732] */
+
 body {
   min-height: 100%;
   background: linear-gradient(to left top, #101010, #070721) fixed;
@@ -15,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: #50C878;
+  color: #7cb7de;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
@@ -25,7 +27,7 @@ h2 {
 }
 
 h3 {
-  color: #50C878;
+  color: #FFB732;
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 24px;
@@ -39,7 +41,7 @@ h4 {
 }
 
 a {
-  color: #50C878;
+  color: #0080FF;
 }
 
 .socialIcon {
@@ -80,7 +82,7 @@ a {
 }
 
 .menu-item:hover {
-  background-color: #50C878;
+  background-color:#0080FF;
   color: white;
 }
 
@@ -137,7 +139,7 @@ div.center p {
 }
 
 .work-button {
-  background-color: #50C878;
+  background-color: #9B30FF;
   margin-top: 15px;
 }
 
