@@ -135,15 +135,15 @@ div.center p {
 
 .work-button {
   background-color: #7cb7de;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  box-shadow: 0 5px 15px rgba(145, 92, 182, .2);
   margin-top: 15px;
 }
 
 .work-button:hover {
   background-color: #6fa4c7;
-  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.work-button:click {
+  background-color: #6fa4c7;
 }
 
 .space-above {
