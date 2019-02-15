@@ -6,6 +6,7 @@ import Interests from './Interests';
 import Contact from './Contact';
 import 'materialize-css/dist/css/materialize.min.css';
 import { Row } from 'react-materialize';
+import './assets/styles/styles.css'
 
 function Homepage(){
   return (
