@@ -6,7 +6,7 @@ function Interests() {
     {
       image: './assets/images/food.png',
       name: "Food Savor",
-      description: 'mic',
+      description: 'With a small group, I created a web app to let users search for recipes based on expiring ingredients in order to reduce food waste. I designed the UI, parsed and displayed the API response, and was heavily involved in the site architecture.',
       technologies: ["Pod Save America", "Serial", "The Daily", "Reply All"],
       link: 'https://foodsavorapp-b49fd.firebaseapp.com/'
     },
