@@ -10,7 +10,7 @@ import { MediaBox, Button, Icon } from 'react-materialize';
 function Project({image, name, description, technologies, link}){
   return(
     <div className="content">
-      <MediaBox src={image} caption={description} className="img-fluid" alt={name}/>
+      <MediaBox src={Food} caption={name} className="img-fluid" alt={name}/>
       <div className="content-body">
         <h3>{name}</h3>
         <p>Description: {description}</p>
