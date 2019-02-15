@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from './AboutMe';
 import MyWork from './MyWork';
+import Background from'./Background';
 import Interests from './Interests';
 import Contact from './Contact';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -11,6 +12,7 @@ function Homepage(){
     <div>
       <AboutMe/>
       <MyWork/>
+      <Background/>
       <Interests/>
       <Contact/>
     </div>
