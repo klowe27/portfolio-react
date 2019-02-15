@@ -7,12 +7,14 @@ import Mastermind from './assets/images/mastermind.png'
 
 function Project({image, name, description, technologies, link}){
   return(
-    <div>
+    <div className="content">
       <img src={image} alt={name}/>
-      <h3>{name}</h3>
-      <p>Description: {description}</p>
-      <p>Technologies: {technologies}</p>
-      <a href={link}><button>View</button></a>
+      <div className="content-body">
+        <h3>{name}</h3>
+        <p>Description: {description}</p>
+        <p>Technologies: {technologies}</p>
+        <a href={link}><button className="work-button">View</button></a>
+      </div>
     </div>
   );
 }

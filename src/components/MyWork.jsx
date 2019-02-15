@@ -36,15 +36,17 @@ function Interests() {
   return(
     <div>
       <h2>My Work</h2>
-      {projects.map((project, index) =>
-        <Project
-        image={project.image}
-        name={project.name}
-        description={project.description}
-        technologies={project.technologies}
-        link={project.link}
-        key={index}/>
-      )}
+      <div className="content-container">
+        {projects.map((project, index) =>
+          <Project
+          image={project.image}
+          name={project.name}
+          description={project.description}
+          technologies={project.technologies}
+          link={project.link}
+          key={index}/>
+        )}
+      </div>
     </div>
   );
 }

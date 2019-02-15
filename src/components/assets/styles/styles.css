@@ -1,4 +1,6 @@
 body {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
   font-family: 'Roboto', sans-serif;
   color: #434343;
 }
@@ -41,4 +43,130 @@ a {
   width: 30px;
   margin: 8px;
   color: green;
-};
+}
+
+.container {
+  width: 80%;
+  padding: 40px;
+  background-color: rgba(250, 250, 250, 0.9);
+}
+
+.menu {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 550px;
+  text-align: center;
+}
+
+.menu-item {
+  color: #7cb7de;
+  background-color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.menu-item:hover {
+  background-color: #7cb7de;
+  color: white;
+}
+
+.heading {
+  /* position: sticky; */
+  margin: 0 -9999rem;
+  top: 0;
+  margin-top: -40px;
+  padding: 10px;
+  background-color: white;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.content-body {
+  padding: 30px;
+}
+
+.headshot {
+  border: 2px solid	#D3D3D3;
+  display: inline-block;
+  width: 150px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-fluid {
+  object-fit: cover;
+  max-width: 100%;
+  height: 200px;
+}
+
+.img-border {
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid	#F0F0F0;
+  border-top: 1px solid	#F0F0F0;
+}
+
+div.center p {
+  display: inline-block;
+  width: 700px;
+}
+
+.work-button {
+  background-color: #7cb7de;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .2);
+  margin-top: 15px;
+}
+
+.work-button:hover {
+  background-color: #6fa4c7;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.space-above {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  div.center p {
+    width: 250px;
+  }
+  .heading {
+    position: relative;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    margin-bottom: 25px;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  .img-fluid {
+    height: auto;
+  }
+}

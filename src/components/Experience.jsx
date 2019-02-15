@@ -3,8 +3,8 @@ import { Icon } from 'react-materialize';
 
 function Experience() {
   return(
-    <div>
-      <div>
+    <div className="content-container">
+      <div className="content content-body">
         <Icon>card_travel</Icon>
         <h3>Experience</h3>
         <h4>Product Marketing Manager</h4>
@@ -14,7 +14,7 @@ function Experience() {
         <h4>Marketing Manager</h4>
         <p>InComm Digital Solutions, 3.2012–8.2016</p>
       </div>
-      <div>
+      <div className="content content-body">
         <Icon>bookmark</Icon>
         <h3>Education</h3>
         <h4>Web Development Code School</h4>
@@ -24,7 +24,7 @@ function Experience() {
         <h4>BA, English</h4>
         <p>BYU, 2004–2008</p>
       </div>
-      <div>
+      <div className="content content-body">
         <Icon>description</Icon>
         <h3>Skills</h3>
         <ul>

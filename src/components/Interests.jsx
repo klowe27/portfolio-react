@@ -23,13 +23,15 @@ function Interests() {
   return(
     <div>
       <h2>Interests</h2>
-      {interests.map((interest, index) =>
-        <IndividualInterest
-        label={interest.label}
-        icon={interest.icon}
-        list={interest.list}
-        key={index}/>
-      )}
+      <div className="content-container">
+        {interests.map((interest, index) =>
+          <IndividualInterest
+          label={interest.label}
+          icon={interest.icon}
+          list={interest.list}
+          key={index}/>
+        )}
+      </div>
     </div>
   );
 }

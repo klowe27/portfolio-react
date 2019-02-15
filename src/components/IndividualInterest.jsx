@@ -5,7 +5,7 @@ import { Icon } from 'react-materialize';
 
 function IndividualInterest({label, icon, list}){
   return(
-    <div>
+    <div className="content content-body">
       <Icon>{icon}</Icon>
       <h3>{label}</h3>
       <ul>
