@@ -8,7 +8,7 @@ import './assets/styles/styles.css'
 
 function Contact(){
   return (
-    <div className="space-above center">
+    <div className="space-above center" id="contact">
       <h2>Contact</h2>
       <p><a href="mailto:kristin.lowe1@gmail.com">kristin.lowe1@gmail.com</a><br/>
       360.910.2110</p>
