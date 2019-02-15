@@ -4,7 +4,7 @@ import MyWork from './MyWork';
 import Background from'./Background';
 import Interests from './Interests';
 import Contact from './Contact';
-import './assets/styles/styles.css';
+import './assets/styles/darkstyles.css';
 
 function Homepage(){
   return (

@@ -2,8 +2,6 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import LinkedIn from './assets/images/linkedIn.svg';
 import Github from './assets/images/github.svg';
-import './assets/styles/styles.css';
-
 
 function Contact(){
   return (
