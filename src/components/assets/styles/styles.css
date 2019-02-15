@@ -41,8 +41,12 @@ a {
 
 .socialIcon {
   width: 30px;
-  margin: 8px;
-  color: green;
+  margin: 5px;
+  opacity: .7;
+}
+
+.socialIcon:hover {
+  opacity: 1;
 }
 
 .container {
@@ -102,9 +106,6 @@ a {
   border: 2px solid	#D3D3D3;
   display: inline-block;
   width: 150px;
-}
-
-.img-circle {
   border-radius: 50%;
 }
 
@@ -150,6 +151,9 @@ div.center p {
   div.center p {
     width: 250px;
   }
+  .container {
+    width: 100%;
+  }
   .heading {
     position: relative;
   }
@@ -165,6 +169,21 @@ div.center p {
   .menu {
     grid-template-columns: 1fr;
     width: auto;
+  }
+  .img-fluid {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  div.center p {
+    width: 400px;
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    margin-bottom: 25px;
   }
   .img-fluid {
     height: auto;

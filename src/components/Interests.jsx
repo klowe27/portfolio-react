@@ -21,7 +21,7 @@ function Interests() {
   ];
 
   return(
-    <div>
+    <div className="space-above">
       <h2>Interests</h2>
       <div className="content-container">
         {interests.map((interest, index) =>
