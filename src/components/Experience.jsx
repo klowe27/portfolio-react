@@ -28,9 +28,9 @@ function Experience() {
         <Icon>description</Icon>
         <h3>Skills</h3>
         <ul>
-          <li>Javascript, React, Angular, Ruby/Rails, jQuery, HTML, CSS, Git, TDD, pair programming</li>
+          <li>Javascript, React, Angular, Ruby/Rails, jQuery, HTML, CSS, Git, TDD, pair programming</li><br/>
           <li>InDesign, Photoshop and Illustrator
-          Google Analytics, SEO, Google Adwords, Mailchimp, and Salesforce</li>
+          Google Analytics, SEO, Google Adwords, Mailchimp, and Salesforce</li><br/>
           <li>Superior communication, writing and design skills</li>
         </ul>
       </div>
