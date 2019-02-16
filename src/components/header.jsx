@@ -1,7 +1,5 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import 'materialize-css/dist/css/materialize.min.css';
-import {Navbar, NavItem, Icon} from 'react-materialize';
 
 
 function Header() {
