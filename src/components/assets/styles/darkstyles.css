@@ -44,6 +44,16 @@ a {
   color: #0080FF;
 }
 
+.star {
+  display: none;
+  position: fixed;
+  z-index: -5;
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+  opacity: .5;
+}
+
 .socialIcon {
   width: 30px;
   margin: 5px;
@@ -88,7 +98,7 @@ a {
 
 .heading {
   position: sticky;
-  margin: 0 -9999rem;
+  margin: 0 auto;
   top: 0;
   background-color: #101010;
   margin-top: -40px;
