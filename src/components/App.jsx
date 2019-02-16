@@ -1,6 +1,6 @@
 import React from 'react';
 import Homepage from './Homepage';
-import DarkHomepage from './DarkHomepage'
+import DarkHomepage from './DarkHomepage';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 
