@@ -4,11 +4,13 @@ import MyWork from './MyWork';
 import Background from'./Background';
 import Interests from './Interests';
 import Contact from './Contact';
-import './assets/styles/darkstyles.css';
+import StarsControl from './StarsControl'
+import './assets/styles/styles.css';
 
 function Homepage(){
   return (
     <div className="container" id="about">
+      <StarsControl/>
       <AboutMe/>
       <MyWork/>
       <Background/>
