@@ -7,8 +7,8 @@ function Star({color, left, top}) {
       <style jsx>{`
         div {
           background-color: ${color};
-          left: ${left};
-          top: ${top};
+          left: ${left}px;
+          top: ${top}px;
         }
       `}</style>
     </div>

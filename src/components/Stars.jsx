@@ -6,7 +6,18 @@ class Stars extends React.Component {
   constructor(props) {
     super(props);
     this.state={};
-    this.state.stars = this.generateStarList();
+    this.state.stars = [];
+    this.generateStarList(1);
+    this.addStars = null;
+    this.generateStarList = this.generateStarList.bind(this);
+  }
+  
+  componentDidMount() {
+    this.addStars = setInterval(this.generateStarList(2), 100);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.addStars);
   }
 
   generateColor() {
@@ -17,20 +28,21 @@ class Stars extends React.Component {
     return Math.floor(Math.random()*max+1);
   }
   
-  generateStarList(){
-    let starList = [];
-    for (let i=0; i < 500; i++) {
+  generateStarList(number){
+    let starList = this.state.stars;
+    for (let i=0; i < number; i++) {
       let newColor = this.generateColor();
       let newLeft = this.randomNumber(window.innerWidth);
       let newTop = this.randomNumber(window.innerHeight);
       starList.push({color: newColor, left: newLeft, top: newTop});
     }
-    return starList;
+    this.setState({stars: starList});
+    console.log(this.state.stars);
   }
   
   render() {
     return (
-      <div>
+      <div className='starContainer'>
         {this.state.stars.map((star) =>
           <Star 
             color={star.color}
