@@ -1,19 +1,54 @@
 /* red: #FF2B18 green: #50C878 blue: #0080FF, purple: #9B30FF, orange: #FFB732] */
 
+@keyframes example {
+  from {background-color: #101010;}
+  to {background-color: #070721;}
+}
+
 body {
   min-height: 100%;
-  background: linear-gradient(to left top, #101010, #070721) fixed;
+  /* background: linear-gradient(to left top, #101010, #070721) fixed; */
+  background-color: #101010;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   font-family: 'Roboto', sans-serif;
   color: #434343;
 }
 
+.menuTab {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: black;
+  width: 75px;
+  height: 75px;
+  z-index: 15;
+  transition: width 3s, height 2s;
+  transition-timing-function: ease-in;
+}
+
+.menuTab:hover {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: rgba(255, 255, 255, .9);
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+}
+
 h1 {
-  font-weight: 100;
-  color: #909090;
-  text-align: center;
+  position: fixed;
+  right: -470px;
+  top: 680px;
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+  font-weight: 130;
+  color: gray;
   font-size: 65px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 h2 {
@@ -58,7 +93,6 @@ a {
   margin-top: 20px;
   width: 80%;
   padding: 40px;
-  background-color: rgba(250, 250, 250, 0.9);
 }
 
 .menu {
@@ -90,7 +124,6 @@ a {
   position: sticky;
   margin: 0 auto;
   top: 0;
-  background-color: #101010;
   margin-top: -40px;
   padding: 10px;
   z-index: 10;
