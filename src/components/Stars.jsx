@@ -7,17 +7,7 @@ class Stars extends React.Component {
     super(props);
     this.state={};
     this.state.stars = [];
-    this.generateStarList(1);
-    this.addStars = null;
-    this.generateStarList = this.generateStarList.bind(this);
-  }
-  
-  componentDidMount() {
-    this.addStars = setInterval(this.generateStarList(2), 100);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.addStars);
+    this.generateStarList(350)
   }
 
   generateColor() {
