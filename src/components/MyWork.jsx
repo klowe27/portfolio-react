@@ -10,7 +10,7 @@ function MyWork() {
     <div className='space-above'>
       <h2>My Work</h2>
       <div className='content-container'>
-        {ProjectList.map((project, index) =>
+        {ProjectList.map((project) =>
           <Project
             image={project.image}
             name={project.name}

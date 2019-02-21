@@ -10,7 +10,7 @@ class Stars extends React.Component {
   }
 
   generateColor() {
-    return `rgb(${this.randomNumber(255)}, ${this.randomNumber(255)}, ${this.randomNumber(255)})`
+    return `rgb(${this.randomNumber(255)}, ${this.randomNumber(255)}, ${this.randomNumber(255)})`;
   }
   
   randomNumber(max) {

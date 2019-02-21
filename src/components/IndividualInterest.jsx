@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'materialize-css/dist/css/materialize.min.css';
 import { Icon } from 'react-materialize';
+import { v4 } from 'uuid';
 
 function IndividualInterest({label, icon, list, id}){
   return(
@@ -10,7 +11,7 @@ function IndividualInterest({label, icon, list, id}){
       <h3>{label}</h3>
       <ul>
         {list.map((item) =>
-          <li>{item}</li>
+          <li key={v4()}>{item}</li>
         )}
       </ul>
     </div>

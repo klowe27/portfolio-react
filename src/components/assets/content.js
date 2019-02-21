@@ -39,19 +39,19 @@ export const ProjectList = [
 ];
 
 export const InterestList = [
-    {
-      label: 'Podcasts',
-      icon: 'mic',
-      list: ['Pod Save America', 'Serial', 'The Daily', 'Reply All']
-    },
-    {
-      label: 'Topics',
-      icon: 'favorite',
-      list: ['Minimalis', 'Design', 'Financial Independence', 'Photography']
-    },
-    {
-      label: 'Dream Travel',
-      icon: 'flight_takeoff',
-      list: ['Thailand', 'Ireland', 'Grand Canyon', 'Iceland']
-    }
-  ];
+  {
+    label: 'Podcasts',
+    icon: 'mic',
+    list: ['Pod Save America', 'Serial', 'The Daily', 'Reply All']
+  },
+  {
+    label: 'Topics',
+    icon: 'favorite',
+    list: ['Minimalis', 'Design', 'Financial Independence', 'Photography']
+  },
+  {
+    label: 'Dream Travel',
+    icon: 'flight_takeoff',
+    list: ['Thailand', 'Ireland', 'Grand Canyon', 'Iceland']
+  }
+];
