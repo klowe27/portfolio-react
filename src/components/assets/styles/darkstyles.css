@@ -1,9 +1,5 @@
 /* red: #FF2B18 green: #50C878 blue: #0080FF, purple: #9B30FF, orange: #FFB732] */
 
-:root {
-  --animation-time: 2s; 
-}
-
 @keyframes backgroundfade {
   from {background-color: #101010;}
   to {background-color: #070721;}
@@ -18,30 +14,32 @@ body {
 }
 
 @keyframes starTwinkle {
-  from {opacity: 1;}
-  to {opacity: .1;}
+  from {opacity: 1; width: 3px; height: 3px;}
+  to {opacity: .1; width: 7px; height: 7px;}
 }
 
 .star {
   position: fixed;
   z-index: -5;
-  width: 5px;
-  height: 5px;
   border-radius: 50%;
-  animation: starTwinkle 2s ease alternate infinite;
-  animation-delay: 2s;
-  transform-origin: 50% 50%;
+  animation: starTwinkle 7s ease alternate infinite;
 }
 
 h1 {
+  font-weight: lighter;
+  color: white;
+  font-size: 40px;
+  margin-top: 4px;
+}
+
+.heading {
   position: fixed;
-  right: -470px;
-  top: 680px;
-  transform: rotate(270deg);
-  transform-origin: left top 0;
-  font-weight: 130;
-  color: gray;
-  font-size: 65px;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  z-index: 10;
+  background-color: black;
+  text-align: center;
 }
 
 h2 {
@@ -55,7 +53,7 @@ h2 {
 }
 
 h3 {
-  color: #FFB732;
+  color: #070721;
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 24px;
@@ -83,20 +81,29 @@ a {
 }
 
 .container {
-  margin-top: 20px;
   width: 80%;
-  padding: 40px;
 }
 
-.menuTab {
+.menuTab1 {
   position: fixed;
   top: 20px;
-  right: 0px;
-  border-radius: 5px 0px 0px 5px;
-  background-color: black;
-  width: 75px;
-  height: 75px;
+  right: 15px;
+  background-color: white;
+  width: 25px;
+  height: 3px;
   z-index: 15;
+  border-radius: 2px;
+}
+
+.menuTab2 {
+  position: fixed;
+  top: 27px;
+  right: 15px;
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  z-index: 15;
+  border-radius: 2px;
 }
 
 @keyframes menuAnimation {
@@ -107,15 +114,15 @@ a {
 .menu {
   position: fixed;
   right: 0px;
-  border-radius: 5px 0px 0px 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .8);
   animation: menuAnimation 2s ease alternate;
   z-index: 15;
+  height: 100%;
+  width: 400px;
 }
 
 .menu-item {
   color: #50C878;
-  background-color: #101010;
   border: none;
   padding: 5px 10px 5px 10px;
   margin-bottom: 5px;
@@ -129,14 +136,6 @@ a {
   color: white;
 }
 
-.heading {
-  position: sticky;
-  margin: 0 auto;
-  top: 0;
-  padding: 10px;
-  z-index: 10;
-}
-
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -144,14 +143,15 @@ a {
 
 .content {
   margin: 20px;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .content-body {
-  padding: 30px;
+  padding: 30px ;
 }
 
 .headshot {
+  margin-top: 30px;
   border: 2px solid	#D3D3D3;
   display: inline-block;
   width: 150px;
@@ -180,12 +180,12 @@ div.center p {
 }
 
 .work-button {
-  background-color: #9B30FF;
+  background-color: #7cb7de;
   margin-top: 15px;
 }
 
 .work-button:hover {
-  background-color: #6fa4c7;
+  background-color: #7cb7de;
 }
 
 .work-button:after {
@@ -203,11 +203,9 @@ div.center p {
   .container {
     width: 100%;
   }
-  .heading {
-    position: relative;
-  }
   h1 {
-    font-size: 35px;
+    font-size: 25px;
+    margin-top: 10px;
   }
   .content-container {
     grid-template-columns: 1fr;

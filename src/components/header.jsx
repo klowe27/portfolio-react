@@ -29,7 +29,10 @@ class Header extends React.Component {
       return (
         <div className='heading'>
           <h1 id='home'>Kristin Brewer-Lowe</h1>
-          <div className='menuTab' onClick={this.toggleMenu}></div>
+          <div onClick={this.toggleMenu}>
+            <div className='menuTab1'></div>
+            <div className='menuTab2'></div>
+          </div>
         </div>
       );
     }

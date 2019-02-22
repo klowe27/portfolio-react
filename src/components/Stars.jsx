@@ -7,7 +7,23 @@ class Stars extends React.Component {
     super(props);
     this.state={};
     this.state.stars = [];
-    this.generateStarList(350)
+    this.timer = null;
+  }
+
+  componentDidMount() {
+    this.timer = setInterval(this.generateStarList.bind(this), 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+  
+  resize() {
+    this.setState({stars: []});
   }
 
   generateColor() {
@@ -18,9 +34,9 @@ class Stars extends React.Component {
     return Math.floor(Math.random()*max+1);
   }
   
-  generateStarList(number){
+  generateStarList(){
     let starList = this.state.stars;
-    for (let i=0; i < number; i++) {
+    for (let i=0; i < 10; i++) {
       let newColor = this.generateColor();
       let newLeft = this.randomNumber(window.innerWidth);
       let newTop = this.randomNumber(window.innerHeight);
@@ -40,7 +56,6 @@ class Stars extends React.Component {
             top={star.top}
             key={v4()}/>
         )}
-
       </div>
     );
   }
