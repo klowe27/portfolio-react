@@ -6,7 +6,7 @@
 
 ## Description
 
-This site is a portfolio of my work and includes sample work, my background, work experience, skills and interests. I originally built this site with a basic .html and .css file, and I've completely rebuilt it using React. 
+This is a portfolio of my work and includes sample projects, my background, work experience, skills and interests. I originally built this site with a basic .html and .css file, and I've completely rebuilt it in React. 
 
 ## Site Plan
 
@@ -29,7 +29,7 @@ If you discover a bug or would like to make a suggestion, email me at kristin.lo
 
 ## Technologies Used
 
-React, Materialize, Webpack.
+React, Javascript, Materialize, Webpack.
 
 ### License
 
