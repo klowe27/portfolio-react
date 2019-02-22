@@ -3,12 +3,11 @@ import 'materialize-css/dist/css/materialize.min.css';
 import LinkedIn from './assets/images/linkedIn.svg';
 import Github from './assets/images/github.svg';
 import { Content } from './assets/content.js';
-import './assets/styles/Contact.css';
+import './assets/styles/Footer.css';
 
-function Contact(){
+function Footer(){
   return (
     <div className='space-above center' id='contact'>
-      <h2>Contact</h2>
       <div className="contact">
         <p><a href='mailto:kristin.lowe1@gmail.com'>{Content.email}</a><br/>
           {Content.phone}</p>
@@ -21,4 +20,4 @@ function Contact(){
   );
 }
 
-export default Contact;
+export default Footer;

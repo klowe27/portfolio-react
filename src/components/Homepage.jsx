@@ -3,7 +3,6 @@ import AboutMe from './AboutMe';
 import ProjectList from './ProjectList';
 import Background from'./Background';
 import InterestList from './InterestList';
-import Contact from './Contact';
 import './assets/styles/darkstyles.css';
 
 function Homepage(){
@@ -13,7 +12,6 @@ function Homepage(){
       <ProjectList/>
       <Background/>
       <InterestList/>
-      <Contact/>
     </div>
   );
 }

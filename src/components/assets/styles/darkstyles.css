@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  color: black;
+  color: indigo;
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 24px;
@@ -59,7 +59,6 @@ a {
 
 .container {
   width: 80%;
-  margin-bottom: 100px;
 }
 
 .space-above {
@@ -75,9 +74,6 @@ a {
   }
   .content {
     margin-bottom: 25px;
-  }
-  .container {
-    margin-bottom: 0px;
   }
 }
 
