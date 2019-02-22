@@ -10,8 +10,8 @@
   animation: menuAnimation 1s ease alternate;
   z-index: 15;
   margin-top: -80px;
-  height: 100%;
   width: 400px;
+  height: 100%;
 }
 
 .menu-top {
@@ -22,10 +22,9 @@
 
 .menu-item {
   color: black;
-  padding: 20px 0px 15px 40px;
+  padding: 20px 0px 15px 0px;
   font-size: 30px;
   font-weight: lighter;
-  text-align: left;
   text-transform: uppercase;
 }
 
