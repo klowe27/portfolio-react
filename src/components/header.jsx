@@ -9,11 +9,11 @@ class Header extends React.Component {
     this.state.showMenu = false;
     this.toggleMenu = this.toggleMenu.bind(this);
   }
-  
+
   toggleMenu () {
     this.setState({showMenu: !this.state.showMenu});
   }
- 
+
   render() {
     if (this.state.showMenu) {
       return (

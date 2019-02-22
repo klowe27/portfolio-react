@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'react-materialize';
-import { ExperienceList, EducationList, SkillsList  } from './assets/content.js'
+import { ExperienceList, EducationList, SkillsList  } from './assets/content.js';
 import {v4} from 'uuid';
 
 function Experience() {
