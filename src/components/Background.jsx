@@ -1,6 +1,5 @@
 import React from 'react';
 import Experience from './Experience';
-import { Content } from './assets/content.js';
 
 function Background() {
   return(
