@@ -55,3 +55,37 @@ export const InterestListContent = [
     list: ['Thailand', 'Ireland', 'Grand Canyon', 'Iceland']
   }
 ];
+
+export const ExperienceList = [
+  {
+    title: 'Product Marketing Manager',
+    company: 'NWEA, 4.2018–8.2018'
+  },
+  {
+    title: 'Marketing Manager',
+    company: 'Open Mesh, 9.2016–3.2018'
+  },
+  {
+    title: 'Marketing Manager',
+    company: 'InComm Digital Solutions, 3.2012–8.2016'
+  }
+];
+
+export const EducationList = [
+  {
+    degree: 'Web Development Code School',
+    school: 'Epicodus, 2018–2019'
+  },
+  {
+    degree: 'MA, English',
+    school: 'BYU, 2009–2011'
+  },
+  {
+    degree: 'BA, English',
+    school: 'BYU, 2004–2008'
+  }
+];
+
+export const SkillsList = [
+  'Javascript, React, Angular, Ruby/Rails, jQuery, HTML, CSS, Git, TDD, pair programming', 'InDesign, Photoshop and Illustrator, Google Analytics, SEO, Google Adwords, Mailchimp, and Salesforce', 'Superior communication, writing and design skills'
+];

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Icon } from 'react-materialize';
+import { ExperienceList, EducationList, SkillsList  } from './assets/content.js'
+import {v4} from 'uuid';
 
 function Experience() {
   return(
@@ -7,31 +9,32 @@ function Experience() {
       <div className='content content-body'>
         <Icon>card_travel</Icon>
         <h3>Experience</h3>
-        <h4>Product Marketing Manager</h4>
-        <p>NWEA, 4.2018–8.2018</p>
-        <h4>Marketing Manager</h4>
-        <p>Open Mesh, 9.2016–3.2018</p>
-        <h4>Marketing Manager</h4>
-        <p>InComm Digital Solutions, 3.2012–8.2016</p>
+        {ExperienceList.map((experience)=>
+          <div key={v4()}>
+            <h4>{experience.title}</h4>
+            <p>{experience.company}</p>
+          </div>
+        )}
       </div>
       <div className='content content-body'>
         <Icon>bookmark</Icon>
         <h3>Education</h3>
-        <h4>Web Development Code School</h4>
-        <p>Epicodus, 2018–2019</p>
-        <h4>MA, English</h4>
-        <p>BYU, 2009–2011</p>
-        <h4>BA, English</h4>
-        <p>BYU, 2004–2008</p>
+        {EducationList.map((education)=>
+          <div key={v4()}>
+            <h4>{education.degree}</h4>
+            <p>{education.school}</p>
+          </div>
+        )}
       </div>
       <div className='content content-body'>
         <Icon>description</Icon>
         <h3>Skills</h3>
         <ul>
-          <li>Javascript, React, Angular, Ruby/Rails, jQuery, HTML, CSS, Git, TDD, pair programming</li><br/>
-          <li>InDesign, Photoshop and Illustrator
-          Google Analytics, SEO, Google Adwords, Mailchimp, and Salesforce</li><br/>
-          <li>Superior communication, writing and design skills</li>
+          {SkillsList.map((skillList)=>
+            <div key={v4()}>
+              <li>{skillList}</li><br/>
+            </div>
+          )}
         </ul>
       </div>
     </div>
