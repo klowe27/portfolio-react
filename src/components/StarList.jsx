@@ -20,7 +20,7 @@ function StarList() {
       let newDuration = randomNumber(40, 80);
       starList.push({color: newColor, left: newLeft, top: newTop, duration: newDuration});
     }
-    return starList
+    return starList;
   }
   
   return (

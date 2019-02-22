@@ -9,7 +9,7 @@ function Project({image, name, description, technologies, link}){
       <MediaBox src={require(`./assets/images/${image}.png`)} caption={name} className='img-fluid' alt={name}/>
       <div className='content-body'>
         <h3>{name}</h3>
-        <p><strong>Description:</strong> {description}</p>
+        <p>{description}</p>
         <p><strong>Technologies:</strong> {technologies}</p>
         <a href={link} target='blank'><Button waves='light' className='work-button'>View<Icon right>link</Icon></Button></a>
       </div>
