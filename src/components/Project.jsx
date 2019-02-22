@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MediaBox, Button, Icon } from 'react-materialize';
-import Food from './assets/images/food.png';
-import Stonewall from './assets/images/stonewall.png';
-import Charity from './assets/images/charity-frog.png';
-import Mastermind from './assets/images/mastermind.png';
 import styles from './assets/styles/Project.css';
 
 function Project({image, name, description, technologies, link}){
   return(
     <div className='content'>
-      <MediaBox src={image} caption={name} className='img-fluid' alt={name}/>
+      <MediaBox src={require(`./assets/images/${image}.png`)} caption={name} className='img-fluid' alt={name}/>
       <div className='content-body'>
         <h3>{name}</h3>
         <p><strong>Description:</strong> {description}</p>
