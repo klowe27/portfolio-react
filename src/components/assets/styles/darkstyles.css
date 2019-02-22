@@ -8,7 +8,6 @@ body {
   animation: backgroundfade 5s ease alternate infinite;
   font-family: 'Roboto', sans-serif;
   color: black;
-  transform: none;
 }
 
 h2 {
@@ -46,7 +45,7 @@ a {
 
 .content {
   margin: 20px;
-  background-color: rgba(220, 220, 220, .7);
+  background-color: rgba(255, 255, 255, .8);
 }
 
 .content-body {
