@@ -1,16 +1,16 @@
 import React from 'react';
-import IndividualInterest from './IndividualInterest';
-import { InterestList } from './assets/content.js';
+import Interest from './Interest';
+import { InterestListContent } from './assets/content.js';
 import { v4 } from 'uuid';
 
-function Interests() {
+function InterestList() {
 
   return(
     <div className='space-above' id='interests'>
       <h2>Interests</h2>
       <div className='content-container'>
-        {InterestList.map((interest) =>
-          <IndividualInterest
+        {InterestListContent.map((interest) =>
+          <Interest
             label={interest.label}
             icon={interest.icon}
             list={interest.list}
@@ -21,4 +21,4 @@ function Interests() {
   );
 }
 
-export default Interests;
+export default InterestList;

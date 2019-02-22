@@ -7,9 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 function App(){
   return (
     <div>
-      <div>
-        <Stars/>
-      </div>
+      <Stars/>
       <Header/>
       <Switch>
         <Route exact path='/' component={Homepage} />

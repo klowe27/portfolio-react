@@ -9,6 +9,7 @@ class Header extends React.Component {
     this.state.showMenu = false;
     this.toggleMenu = this.toggleMenu.bind(this);
   }
+  
   toggleMenu () {
     this.setState({showMenu: !this.state.showMenu});
   }
@@ -18,7 +19,7 @@ class Header extends React.Component {
       return (
         <div className='heading'>
           <h1 id='home'>Kristin Brewer-Lowe</h1>
-          <div onClick={this.toggleMenu} className='menuButton'>
+          <div onClick={this.toggleMenu}>
             <div className='menuTab tab1 x1'></div>
             <div className='menuTab tab2 x2'></div>
           </div>

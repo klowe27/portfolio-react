@@ -7,7 +7,7 @@ export const Content = {
   background: 'My dad worked for HP for his entire career as a software engineer helping design printers. When I was younger, he used to say I had a great engineering mind based on how I approached projects and found creative solutions. My freshman year of college, I was torn between engineering and English, and ended up pursuing English, which led to a career in marketing. But marketing has never felt like a natural fit for my skills, and I\'ve always wondered if programming could be right for me. I spent enough years wondering, and now I\'m doing something about it.'
 };
 
-export const ProjectList = [
+export const ProjectListContent = [
   {
     image: 'food',
     name: 'Food Savor',
@@ -38,7 +38,7 @@ export const ProjectList = [
   }
 ];
 
-export const InterestList = [
+export const InterestListContent = [
   {
     label: 'Podcasts',
     icon: 'mic',

@@ -1,8 +1,8 @@
 import React from 'react';
 import AboutMe from './AboutMe';
-import MyWork from './MyWork';
+import ProjectList from './ProjectList';
 import Background from'./Background';
-import Interests from './Interests';
+import InterestList from './InterestList';
 import Contact from './Contact';
 import './assets/styles/darkstyles.css';
 
@@ -10,9 +10,9 @@ function Homepage(){
   return (
     <div className='container' id='about'>
       <AboutMe/>
-      <MyWork/>
+      <ProjectList/>
       <Background/>
-      <Interests/>
+      <InterestList/>
       <Contact/>
     </div>
   );
