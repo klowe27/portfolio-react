@@ -15,21 +15,34 @@ h1 {
   z-index: 100;
 }
 
+.menuTabBox {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 80px;
+  height: 65px;
+  z-index: 29;
+}
+
+.menuTabBox:hover {
+  background-color: #1f1f1f;
+}
+
 .menuTab {
   position: fixed;
   right: 30px;
   background-color: white;
-  width: 20px;
-  height: 2px;
+  width: 21px;
+  height: 3px;
   z-index: 30;
 }
 
 .tab1 {
-  top: 26px;
+  top: 25px;
 }
 
 .tab2 {
-  top: 32px;
+  top: 33px;
 }
 
 .x1 {
