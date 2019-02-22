@@ -6,11 +6,11 @@
 
 ## Description
 
-This is a portfolio of my work and includes sample projects, my background, work experience, skills and interests. I originally built this site with a basic .html and .css file, and I've completely rebuilt it in React. 
+This is a portfolio of my work and includes sample projects, my background, work experience, skills and interests. I originally built this site with a basic .html and .css file, and I've completely rebuilt it in React.
 
 ## Site Plan
 
-<img src="src/components/assets/images/structure.png" width="350" title="Component Structure">
+<img src="src/components/assets/images/structure.png" width="400" title="Component Structure">
 
 ## Setup/Installation Requirements
 
