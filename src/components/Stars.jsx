@@ -7,53 +7,38 @@ class Stars extends React.Component {
     super(props);
     this.state={};
     this.state.stars = [];
-    this.timer = null;
-  }
-
-  componentDidMount() {
-    this.timer = setInterval(this.generateStarList.bind(this), 5000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
-  
-  resize() {
-    this.setState({stars: []});
+    this.generateStarList();
   }
 
   generateColor() {
-    return `rgb(${this.randomNumber(255)}, ${this.randomNumber(255)}, ${this.randomNumber(255)})`;
+    return `rgb(${this.randomNumber(1, 255)}, ${this.randomNumber(1, 255)}, ${this.randomNumber(1, 255)})`;
   }
   
-  randomNumber(max) {
-    return Math.floor(Math.random()*max+1);
+  randomNumber(min, max) {
+    return Math.floor(Math.random()*max+min);
   }
   
   generateStarList(){
     let starList = this.state.stars;
-    for (let i=0; i < 10; i++) {
+    for (let i=0; i < 100; i++) {
       let newColor = this.generateColor();
-      let newLeft = this.randomNumber(window.innerWidth);
-      let newTop = this.randomNumber(window.innerHeight);
-      starList.push({color: newColor, left: newLeft, top: newTop});
+      let newLeft = this.randomNumber(1, window.innerWidth);
+      let newTop = this.randomNumber(1, window.innerHeight);
+      let newDuration = this.randomNumber(50, 100);
+      starList.push({color: newColor, left: newLeft, top: newTop, duration: newDuration});
     }
     this.setState({stars: starList});
-    console.log(this.state.stars);
   }
   
   render() {
     return (
-      <div className='starContainer'>
+      <div>
         {this.state.stars.map((star) =>
           <Star 
             color={star.color}
             left={star.left}
             top={star.top}
+            duration = {star.duration}
             key={v4()}/>
         )}
       </div>

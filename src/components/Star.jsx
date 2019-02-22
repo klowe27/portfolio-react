@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './assets/styles/Star.css';
 
-function Star({color, left, top}) {
+function Star({color, left, top, duration}) {
   return(
     <div className='star'>
       <style jsx>{`
@@ -9,6 +10,7 @@ function Star({color, left, top}) {
           background-color: ${color};
           left: ${left}px;
           top: ${top}px;
+          animation-duration: ${duration}s;
         }
       `}</style>
     </div>
@@ -18,7 +20,8 @@ function Star({color, left, top}) {
 Star.propTypes = {
   color: PropTypes.string,
   left: PropTypes.number,
-  top: PropTypes.number
+  top: PropTypes.number,
+  duration: PropTypes.number
 };
 
 export default Star;
