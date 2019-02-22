@@ -8,7 +8,7 @@ function AboutMe(){
     <div className='space-above center'>
       <img  className='headshot' src={ProfileImage} alt='Profile image'/>
       <h2>About Me</h2>
-      <p className='about-me'>{Content.bio}</p>
+      <p className='bio'>{Content.bio}</p>
     </div>
   );
 }

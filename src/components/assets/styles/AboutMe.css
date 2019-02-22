@@ -5,11 +5,20 @@
   border-radius: 50%;
 }
 
-.about-me {
+.bio {
   background-color: black;
   opacity: .8;
   color: white;
   padding: 50px;
   font-weight: lighter;
   letter-spacing: 1px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .bio {
+    width: 90%;
+    padding: 30px;
+  }
 }
