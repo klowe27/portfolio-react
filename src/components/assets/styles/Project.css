@@ -1,14 +1,10 @@
 .work-button {
-  background-color: #7cb7de;
+  background-color: black;
   margin-top: 15px;
 }
 
 .work-button:hover {
   background-color: #7cb7de;
-}
-
-.work-button:after {
-  background-color: #6fa4c7;
 }
 
 .img-fluid {

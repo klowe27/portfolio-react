@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  color: #070721;
+  color: black;
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 24px;
@@ -46,7 +46,7 @@ a {
 
 .content {
   margin: 20px;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(220, 220, 220, .7);
 }
 
 .content-body {
