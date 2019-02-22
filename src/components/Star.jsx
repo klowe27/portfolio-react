@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './assets/styles/Star.css';
+import './assets/styles/Star.css';
 
 function Star({color, left, top, duration}) {
   return(

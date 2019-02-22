@@ -62,19 +62,11 @@ a {
   margin-bottom: 100px;
 }
 
-div.center p {
-  display: inline-block;
-  width: 700px;
-}
-
 .space-above {
   margin-top: 70px;
 }
 
 @media screen and (max-width: 768px) {
-  div.center p {
-    width: 250px;
-  }
   .container {
     width: 100%;
   }
@@ -87,9 +79,6 @@ div.center p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
-  div.center p {
-    width: 400px;
-  }
   .content-container {
     grid-template-columns: 1fr;
   }

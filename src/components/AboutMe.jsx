@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileImage from './assets/images/profile.jpg';
 import { Content } from './assets/content.js';
-import styles from './assets/styles/AboutMe.css';
+import './assets/styles/AboutMe.css';
 
 function AboutMe(){
   return (

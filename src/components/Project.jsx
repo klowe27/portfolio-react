@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MediaBox, Button, Icon } from 'react-materialize';
-import styles from './assets/styles/Project.css';
+import './assets/styles/Project.css';
 
 function Project({image, name, description, technologies, link}){
   return(
