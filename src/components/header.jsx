@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from './Menu'
-import styles from './assets/styles/Header.css'
+import Menu from './Menu';
+import styles from './assets/styles/Header.css';
 
 class Header extends React.Component {
   constructor (props) {

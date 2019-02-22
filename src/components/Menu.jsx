@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import styles from './assets/styles/Menu.css'
+import styles from './assets/styles/Menu.css';
 
 function Menu() {
   return (
@@ -12,7 +12,7 @@ function Menu() {
       <div><Link to='/#contact'><button className='menu-item'>Contact</button></Link></div>
       <p onClick={this.toggleMenu}>Close</p>
     </div>
-  )  
+  );  
 }
 
 export default Menu;
