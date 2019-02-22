@@ -2,7 +2,7 @@ import React from 'react';
 import Star from './Star';
 import {v4} from 'uuid';
 
-function Stars() {
+function StarList() {
   function generateColor() {
     return `rgb(${randomNumber(1, 255)}, ${randomNumber(1, 255)}, ${randomNumber(1, 255)})`;
   }
@@ -37,4 +37,4 @@ function Stars() {
   );
 }
 
-export default Stars;
+export default StarList;
