@@ -2,48 +2,39 @@ import React from 'react';
 import Star from './Star';
 import {v4} from 'uuid';
 
-class Stars extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state={};
-    this.state.stars = [];
-    this.generateStarList();
-  }
-
-  generateColor() {
-    return `rgb(${this.randomNumber(1, 255)}, ${this.randomNumber(1, 255)}, ${this.randomNumber(1, 255)})`;
+function Stars() {
+  function generateColor() {
+    return `rgb(${randomNumber(1, 255)}, ${randomNumber(1, 255)}, ${randomNumber(1, 255)})`;
   }
   
-  randomNumber(min, max) {
+  function randomNumber(min, max) {
     return Math.floor(Math.random()*max+min);
   }
   
-  generateStarList(){
-    let starList = this.state.stars;
+  function generateStarList(){
+    let starList = [];
     for (let i=0; i < 100; i++) {
-      let newColor = this.generateColor();
-      let newLeft = this.randomNumber(1, window.innerWidth);
-      let newTop = this.randomNumber(1, window.innerHeight);
-      let newDuration = this.randomNumber(40, 80);
+      let newColor = generateColor();
+      let newLeft = randomNumber(1, window.innerWidth);
+      let newTop = randomNumber(1, window.innerHeight);
+      let newDuration = randomNumber(40, 80);
       starList.push({color: newColor, left: newLeft, top: newTop, duration: newDuration});
     }
-    this.setState({stars: starList});
+    return starList
   }
   
-  render() {
-    return (
-      <div>
-        {this.state.stars.map((star) =>
-          <Star 
-            color={star.color}
-            left={star.left}
-            top={star.top}
-            duration = {star.duration}
-            key={v4()}/>
-        )}
-      </div>
-    );
-  }
+  return (
+    <div>
+      {generateStarList().map((star) =>
+        <Star 
+          color={star.color}
+          left={star.left}
+          top={star.top}
+          duration = {star.duration}
+          key={v4()}/>
+      )}
+    </div>
+  );
 }
 
 export default Stars;
