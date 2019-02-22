@@ -59,6 +59,7 @@ a {
 
 .container {
   width: 80%;
+  margin-bottom: 100px;
 }
 
 div.center p {

@@ -24,7 +24,7 @@ class Stars extends React.Component {
       let newColor = this.generateColor();
       let newLeft = this.randomNumber(1, window.innerWidth);
       let newTop = this.randomNumber(1, window.innerHeight);
-      let newDuration = this.randomNumber(50, 100);
+      let newDuration = this.randomNumber(40, 80);
       starList.push({color: newColor, left: newLeft, top: newTop, duration: newDuration});
     }
     this.setState({stars: starList});

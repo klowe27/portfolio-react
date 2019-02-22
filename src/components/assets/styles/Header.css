@@ -12,6 +12,7 @@ h1 {
   top: 0px;
   background-color: black;
   text-align: center;
+  z-index: 100;
 }
 
 .menuTab {
