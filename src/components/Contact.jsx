@@ -9,7 +9,7 @@ function Contact(){
   return (
     <div className='space-above center' id='contact'>
       <h2>Contact</h2>
-      <div className="content">
+      <div className="contact">
         <p><a href='mailto:kristin.lowe1@gmail.com'>{Content.email}</a><br/>
           {Content.phone}</p>
         <div>

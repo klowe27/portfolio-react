@@ -4,3 +4,12 @@
   width: 150px;
   border-radius: 50%;
 }
+
+.about-me {
+  background-color: black;
+  opacity: .8;
+  color: white;
+  padding: 50px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
