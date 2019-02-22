@@ -7,7 +7,7 @@ import { v4 } from 'uuid';
 function MyWork() {
 
   return(
-    <div className='space-above'>
+    <div className='space-above' id='work'>
       <h2>My Work</h2>
       <div className='content-container'>
         {ProjectList.map((project) =>

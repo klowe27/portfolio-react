@@ -1,6 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-
+import Menu from './Menu'
+import styles from './assets/styles/Header.css'
 
 class Header extends React.Component {
   constructor (props) {
@@ -16,13 +16,13 @@ class Header extends React.Component {
   render() {
     if (this.state.showMenu) {
       return (
-        <div className='menu'>
-          <div><Link to='/#about'><button className='menu-item'>About Me</button></Link></div>
-          <div><Link to='/#work'><button className='menu-item'>My Work</button></Link></div>
-          <div><Link to='/#background'><button className='menu-item'>Background</button></Link></div>
-          <div><Link to='/#interests'><button className='menu-item'>Interests</button></Link></div>
-          <div><Link to='/#contact'><button className='menu-item'>Contact</button></Link></div>
-          <p onClick={this.toggleMenu}>Close</p>
+        <div className='heading'>
+          <h1 id='home'>Kristin Brewer-Lowe</h1>
+          <div onClick={this.toggleMenu} className='menuButton'>
+            <div className='menuTab tab1 x1'></div>
+            <div className='menuTab tab2 x2'></div>
+          </div>
+          <Menu/>
         </div>
       );
     } else {
@@ -30,8 +30,8 @@ class Header extends React.Component {
         <div className='heading'>
           <h1 id='home'>Kristin Brewer-Lowe</h1>
           <div onClick={this.toggleMenu}>
-            <div className='menuTab1'></div>
-            <div className='menuTab2'></div>
+            <div className='menuTab tab1'></div>
+            <div className='menuTab tab2'></div>
           </div>
         </div>
       );

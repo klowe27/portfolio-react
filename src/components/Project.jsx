@@ -5,6 +5,7 @@ import Food from './assets/images/food.png';
 import Stonewall from './assets/images/stonewall.png';
 import Charity from './assets/images/charity-frog.png';
 import Mastermind from './assets/images/mastermind.png';
+import styles from './assets/styles/Project.css'
 
 function Project({image, name, description, technologies, link}){
   return(
