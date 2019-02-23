@@ -6,11 +6,11 @@ function StarList() {
   function generateColor() {
     return `rgb(${randomNumber(1, 255)}, ${randomNumber(1, 255)}, ${randomNumber(1, 255)})`;
   }
-  
+
   function randomNumber(min, max) {
     return Math.floor(Math.random()*max+min);
   }
-  
+
   function generateStarList(){
     let starList = [];
     for (let i=0; i < 100; i++) {
@@ -22,11 +22,11 @@ function StarList() {
     }
     return starList;
   }
-  
+
   return (
     <div>
       {generateStarList().map((star) =>
-        <Star 
+        <Star
           color={star.color}
           left={star.left}
           top={star.top}
