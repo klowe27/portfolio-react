@@ -10,7 +10,7 @@ This is a portfolio of my work and includes sample projects, my background, work
 
 ## Site Plan
 
-<img src="src/components/assets/images/structure.png" width="400" title="Component Structure">
+<img src="src/components/assets/images/structure.png" width="450" title="Component Structure">
 
 ## Setup/Installation Requirements
 
