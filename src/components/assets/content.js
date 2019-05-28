@@ -9,6 +9,13 @@ export const Content = {
 
 export const ProjectListContent = [
   {
+    image: 'money',
+    name: 'Intentional Money',
+    description: 'I created a budgeting app to let users create a monthly budget, track accounts and add and manage transactions. I built the app from concept to execution, including the UI with a strong focus on visual interest and usability.',
+    technologies: 'React, Javascript, Firebase NoSQL database and authentication',
+    link: 'https://github.com/klowe27/intentional-money'
+  },
+  {
     image: 'food',
     name: 'Food Savor',
     description: 'With a small group, I created a web app to let users search for recipes based on expiring ingredients in order to reduce food waste. I designed the UI, parsed and displayed the API response, and was heavily involved in the site architecture.',
@@ -58,6 +65,10 @@ export const InterestListContent = [
 
 export const ExperienceList = [
   {
+    title: 'Web Development Intern',
+    company: 'Planet Argon, 4.2019–5.2019'
+  },
+  {
     title: 'Product Marketing Manager',
     company: 'NWEA, 4.2018–8.2018'
   },
@@ -87,5 +98,5 @@ export const EducationList = [
 ];
 
 export const SkillsList = [
-  'Javascript, React, Angular, Ruby/Rails, jQuery, HTML, CSS, Git, TDD, pair programming', 'InDesign, Photoshop and Illustrator, Google Analytics, SEO, Google Adwords, Mailchimp, and Salesforce', 'Superior communication, writing and design skills'
+  'Javascript, React, Redux, Angular, Webpack, Ruby/Rails, SQL, Firebase, jQuery, HTML, CSS, Git, Github, Bitbucket, Jasmine, Jest, Test driven development and pair programming', 'InDesign, Photoshop and Illustrator', 'Superior communication, writing and design skills'
 ];
