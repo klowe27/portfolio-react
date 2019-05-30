@@ -17,7 +17,7 @@ function StarList() {
       let newColor = generateColor();
       let newLeft = randomNumber(-30, window.innerWidth);
       let newTop = randomNumber(-30, window.innerHeight);
-      let newDuration = randomNumber(20, 80);
+      let newDuration = randomNumber(10, 70);
       starList.push({color: newColor, left: newLeft, top: newTop, duration: newDuration});
     }
     return starList;

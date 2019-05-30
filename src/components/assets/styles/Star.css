@@ -1,6 +1,6 @@
 @keyframes starTwinkle {
-  from {opacity: .4; width: 175px; height: 175px; transform: translate(0px, 0px);}
-  to {opacity: .2; width: 90px; height: 90px; transform: translate(30px, 30px);}
+  from {opacity: .4; width: 175px; height: 175px; transform: translate(-50px, -50px);}
+  to {opacity: .2; width: 90px; height: 90px; transform: translate(50px, 50px);}
 }
 
 .star {
