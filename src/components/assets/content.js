@@ -41,7 +41,7 @@ export const ProjectListContent = [
     name: 'Mastermind',
     description: 'I worked in a small group to create a version of the game Mastermind. Once the group project was complete, I completely refactored the code to separate concerns, use Webpack, make it modular, add testing and redesign the UI.',
     technologies: 'Javascript, Webpack, Jasmine, Karma, jQuery, HTML and CSS',
-    link: 'https://github.com/klowe27/mastermind'
+    link: 'https://dry-castle-29629.herokuapp.com/'
   }
 ];
 
